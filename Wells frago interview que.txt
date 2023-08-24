@@ -1,0 +1,63 @@
+
+Coding questions :
+1. Integer Array sorting
+2. Check each character in a string is unique or not ?
+3.  Retrieving elements from an int array based on some condition
+example: Input1: 105264 
+Input 2: Position 2 
+Output: 102456
+4. Generate a problem for read and write 
+5. Having an arrary list of employees, increase the salary of employees by 10000
+6. Having an array list of employees, filter the employee based on the given input 
+7. Write a function interface to add the sum of two numbers
+8. write a programm to merge 2 integers arrays and sort them
+9. write a programm to sum all the elements in the integer array using streams
+10. write a programme to find employees from a list with specific salary
+11. Program for Database - Entity Relation with example 
+
+What is FlatMap ?
+HashMap internals ?
+Difference between HashMap & HashSet ?
+Internals of HashSet; how does it work internally 
+What are the java 8 features ?
+intern() method in String class ?
+How to access static inner class methods from outer class ?
+String Immutable examples
+
+Serial stream and parallel stream
+Livelocks on thread 
+how many types of syncronization 
+when to consider array list and linked list 
+What are the changes in Java 8 on HashMap
+what is trywith resource 
+what type of clases under list 
+what is the super class for STACK 
+what is Treeset and its super class 
+Fail safe and Fail Fast 
+controler 
+Spring boot over spring advantages 
+how many type of communications in microservices 
+Design patterns for communication 
+Aggrigator and chain of responsibility 
+custom collection and custom linked list 
+
+Disadvantage in Parallel streaming
+PriorityQueue vs LinkedListQueue
+ComponentScan
+Component vs service annotation
+Controller vs Restcontroller
+Can have 2 main method in Spring application
+Transactional Management in spring boot
+
+What are the types Isolation levels
+what is the contract between equals() and hashcode()
+internal working of HashMap, HashSet and Hashtable
+if hashcode of 2 objects is same then is that means objects are equals or not
+MultiValuedMap
+Load Balancing
+Interface A and B having a same abstract method then if a implementation class is implementing both the interfaces then error will come or not
+Interface A and B having a same default method then if a implementation class is implementing both the interfaces then error will come or not
+
+
+
+
