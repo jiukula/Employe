@@ -1,0 +1,130 @@
+1.print the pair of numbers in the array whose sum is target number.
+Example 1:
+Input { 12, 5, 7, -11, 5, 0, 17}, target sum =17
+out put : {12,5} ,{0,17}
+Example 1:
+Input: nums = [2,7,11,15], target sum = 9
+Output: [2,7]
+Explanation: Because nums[0] + nums[1] == 9
+Example 2:
+Input: nums = [3,2,4], target = 6
+Output: [3,2]
+Example 3:
+Input: nums = [3,3], target = 6
+Output: [3,3]
+2.write program to create singleton class?
+3.Count the number of employees in each department?
+4.we are having Employe class and employee List 
+Employe class have id, name, age,gender, department, yearofjoining, salary
+
+Employe List: 
+List<Employee> employeeList =  new ArrayList<Employee>();
+employeeList.add(new Employee(111, "kulamani", "29", "Male", "IT", "2023", "20k"));
+employeeList.add(new Employee(122, "Paul Niksui", 25, "Male", "Sales And Marketing", 2015, 13500.0));
+employeeList.add(new Employee(133, "Martin Theron", 29, "Male", "Infrastructure", 2012, 18000.0));
+employeeList.add(new Employee(144, "Murali Gowda", 28, "Male", "Product Development", 2014, 32500.0));
+employeeList.add(new Employee(155, "Nima Roy", 27, "Female", "HR", 2013, 22700.0));
+Q.1 How many male and Feamle Employee are There in the organisation?
+q.2.How many male and Feamle Employee are There in the organisation?
+Q.3 What is the average age of male and female employees?
+q.4 Get the details of highest paid employee in the organization
+
+5.[{
+"name":"A"
+"email":"abc@gmail.com"
+},
+{
+"name":"B"
+"email":"abd@def.com"
+}]
+List of Array Print the Email.
+Output:["abc@gmail.com","abd@def.com"]
+6.hasmap<String, Emplyee>
+
+map.put(p1,new Employee(101, "abc"));
+map.put(p2,new Employee(102, "abc"))
+
+sort based on emplye ID 
+7. print the index of the numbers in the array whose sum is target.
+
+Example 1:
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+Example 2:
+Input: nums = [3,2,4], target = 6
+Output: [1,2]
+Example 3:
+Input: nums = [3,3], target = 6
+Output: [0,1]
+Constraints:
+2 <= nums.length <= 104
+-109 <= nums[i] <= 109
+-109 <= target <= 109
+Only one valid answer exists.
+
+9. check whether the number is palindrome or not
+Given an integer x, return true if x is a palindrome, and false otherwise.
+Example 1:
+Input: x = 121
+Output: true
+Explanation: 121 reads as 121 from left to right and from right to left.
+Example 2:
+Input: x = -121
+Output: false
+Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
+Example 3:
+Input: x = 10
+Output: false
+Explanation: Reads 01 from right to left. Therefore it is not a palindrome
+10.First Name and Last Name, out put full name using Lambda Expression
+11.Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.
+Input: intervals = [[1,3],[2,6],[8,10],[15,18]]
+Output: [[1,6],[8,10],[15,18]]
+Explanation: Since intervals [1,3] and [2,6] overlap, merge them into [1,6].
+12.Abcdab – How to print first non repeating character?
+13.
+123
+456
+789
+This is sorted array. How do you print ‘5’ or ‘8’?
+14.Stream Api
+
+List<Integer> myList = Arrays.asList(10,15,8,49,25,98,98,32,15,100,100);
+//Given a list of integers, find out each numbers occurance exist in the list using Stream functions?
+	    myList.stream().collect(Collectors.groupingBy(s -> s+"", LinkedHashMap::new, Collectors.counting())).entrySet().forEach(System.out::println);  
+        //Given a list of integers, find out all the even numbers exist in the list using Stream functions?
+//        myList.stream().filter(e -> e%2==0).forEach(System.out::println);
+
+        //Given a list of integers, find out all the numbers starting with 1 using Stream functions?
+//        myList.stream().map(s -> s + "").filter(s -> s.startsWith("1")).forEach(System.out::println);
+        //How to find duplicate elements in a given integers list in java using Stream functions?
+//        Set<Integer> s = new HashSet<>();
+//        myList.stream().filter(e -> !s.add(e)).collect(Collectors.toSet()).forEach(System.out::println);
+        //Given the list of integers, find the first element of the list using Stream functions?
+//        myList.stream().limit(1).forEach(System.out::println);
+        //Alternative
+//        myList.stream().findFirst().ifPresent(System.out::println);
+        //Given a list of integers, find the total number of elements present in the list using Stream functions?
+//        System.out.println(myList.stream().count());
+        //Given a list of integers, find the maximum value element present in it using Stream functions?
+//        myList.stream().max((a,b)-> a-b).ifPresent(System.out::println);
+        //Given a String, find the first non-repeated character in it using Stream functions?
+        String input = "Jjava Coding Alive is Awesome";
+//        input.chars().mapToObj(s -> Character.toLowerCase(Character.valueOf((char) s)))
+//                .collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting()))
+//                .entrySet().stream().filter(e -> e.getValue()==1L)
+//                .map(Map.Entry::getKey).findFirst().ifPresent(System.out::println);
+        //Given a String, find the first repeated character in it using Stream functions?
+//        input.chars().mapToObj(s -> Character.toLowerCase(Character.valueOf((char) s)))
+//                .collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting()))
+//                .entrySet().stream()
+//                .filter(e -> e.getValue()>1L)
+//                .map(Map.Entry::getKey).findFirst()
+//                .ifPresent(System.out::println);
+        //Count the number of words with length more than two. {"John","Cat","CAT","LOTUS","lotus"}
+//        System.out.println(Stream.of("John","Cat","CAT","LOTUS","lotus", "aa", "aaaaaa").filter(e -> e.length()>2).count());
+        //Print all the 1st char as Capital in each word
+//        Stream.of("john","cat","cAT","lOTUS","lotus", "aa", "aaaaaa")
+//                .map(e -> e.replaceFirst(String.valueOf(e.charAt(0)), String.valueOf(Character.toUpperCase(e.charAt(0)))))
+//                .forEach(System.out::println);
